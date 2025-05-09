@@ -21,4 +21,4 @@
 
 ## 📍 Репозиторий
 
-Перейдите по ссылке, чтобы получить доступ к репозиторию: [https://github.com/PavelZyurkalov/posmotri-v-okno-fd](https://github.com/PavelZyurkalov/posmotri-v-okno-fd)
+Перейдите по ссылке, чтобы получить доступ к репозиторию: https://github.com/PavelZyurkalov/posmotri-v-okno-fd
