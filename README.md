@@ -18,3 +18,7 @@
 - CSS3 (Flexbox + Grid)
 - JavaScript 
 - Git (работа с ветками и конфликтами)
+
+## 📍 Репозиторий
+
+Перейдите по ссылке, чтобы получить доступ к репозиторию: [https://github.com/PavelZyurkalov/posmotri-v-okno-fd](https://github.com/PavelZyurkalov/posmotri-v-okno-fd)
