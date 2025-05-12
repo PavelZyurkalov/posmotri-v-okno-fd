@@ -9,8 +9,11 @@ html {
 }
 
 .page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   inline-size: 1200px;
-  block-size: 100%;
+  block-size: 820px;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -50,24 +53,16 @@ ol {
   background-color: #D9D9D9;
 }
 
-
-.page{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.content{
+.content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: end;           /* прижимаем содержимое к нижнему краю */
-  gap: 20px;                  
+  align-items: end; /* прижимаем содержимое к нижнему краю */
+  gap: 30px;
   padding: 20px;
-  inline-size: 100%;
-  
+  inline-size: 1200px;
+  box-sizing: 500px;
   max-inline-size: 1200px;
-  grid-template-areas:
-    "result details";
+  grid-template-areas: "result details";
 }
 
 .result {
@@ -81,8 +76,8 @@ ol {
   grid-area: details;
   display: flex;
   flex-direction: column;
-  block-size: 100%;
-  inline-size: 100%;
+  block-size: 540px;
+  inline-size: 400px;
 }
 
 .search-form {
@@ -90,31 +85,36 @@ ol {
   gap: 20px;
   justify-content: space-between;
   align-items: flex-start;
+  position: relative;
+  margin-left: 8px;
+  bottom: 2px;
 }
 
 .content__list-container {
-  block-size: 450px;
+  block-size: 300px;
   overflow-y: auto;
   position: relative;
 }
 
-.content__list{
+.content__list {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 26px;
 }
 
-.result__video{
-  inline-size: 100%;
-  block-size: 100%;
+.result__video {
+  inline-size: 711px;
+  block-size: 386px;
   object-fit: cover;
 }
 
-.result__video-container{
-  block-size: 500px;
-  inline-size: 850px;
-  margin-block-end: 16px;
+.result__video-container {
+  block-size: 374px;
+  inline-size: 721px; /* передвигает правую колонку */
+  margin-block-end: 7px;
   position: relative;
+  bottom: 3px;
+  left: 10px;
 }
 
 .content__video-card {
@@ -123,7 +123,7 @@ ol {
 }
 
 .content__video-card-thumbnail {
-  inline-size: 200px;
+  inline-size: 100px;
   block-size: 100px;
   object-fit: cover;
   object-position: center;
@@ -131,25 +131,16 @@ ol {
 
 .content__video-card-description-container {
   flex-grow: 1;
-  padding-inline-start: 10px; /* отступ между текстом и изображением */
 }
 
-.search-form {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 20px;
-}
-
-.search-form__fieldset{
+.search-form__fieldset {
   border: none;
   padding: 0;
   margin: 0;
-
 }
 
 .search-form__fieldset-title {
-  font-weight: 700;
+  font-weight: 400;
   font-size: 18px;
   line-height: 22px;
   margin-block-end: 5px;
@@ -157,7 +148,7 @@ ol {
 
 .search-form__checkbox-list {
   display: flex;
-  gap: 15px;
+  gap: 10px;
 }
 
 .search-form__label {
@@ -167,7 +158,7 @@ ol {
   gap: 5px;
   cursor: pointer;
   padding: 2px;
-  cursor: pointer;
+  margin-bottom: 5px;
 }
 
 .search-form__label:has(:focus-visible) {
@@ -203,7 +194,7 @@ ol {
   block-size: 16px;
   background-color: #fff;
   position: absolute;
-  inset: 2px;
+  inset: 1px;
   opacity: 0;
   transition: opacity 0.2s ease;
 }
@@ -217,11 +208,17 @@ ol {
   text-decoration: underline;
 }
 
+.title,
+.content__video-card-title {
+  font-family: 'Oswald', sans-serif;
+}
+
 .title {
   font-weight: 700;
   font-size: 75px;
   line-height: 70px;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .content__accent {
@@ -247,13 +244,13 @@ ol {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  text-transform: uppercase;
 }
 
 .content__video-card-description {
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  overflow: hidden;
 }
 
 .content__video-card {
@@ -297,7 +294,7 @@ ol {
   background-color: #545050;
 }
 
-.visually-hidden{
+.visually-hidden {
   position: absolute;
   inline-size: 1px;
   block-size: 1px;
@@ -316,7 +313,6 @@ ol {
   cursor: pointer;
   padding: 6px 12px;
   text-align: center;
-  cursor: pointer;
 }
 
 /* Состояния кнопки */
@@ -341,9 +337,11 @@ ol {
   align-self: flex-end;
   block-size: 34px;
   inline-size: 194px;
+  margin-bottom: 10px;
 }
 
 .more-button {
   inline-size: 100%;
   block-size: 34px;
+  margin-top: 30px;
 }
