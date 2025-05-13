@@ -13,12 +13,13 @@ html {
   justify-content: center;
   align-items: center;
   inline-size: 1200px;
-  block-size: 820px;
+  block-size: 100%;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  padding-bottom: 150px;
 }
 
 h1,
@@ -60,7 +61,6 @@ ol {
   gap: 30px;
   padding: 20px;
   inline-size: 1200px;
-  box-sizing: 500px;
   max-inline-size: 1200px;
   grid-template-areas: "result details";
 }
@@ -103,18 +103,16 @@ ol {
 }
 
 .result__video {
-  inline-size: 711px;
-  block-size: 386px;
+  inline-size: 100%;
+  block-size: 100%;
   object-fit: cover;
 }
 
 .result__video-container {
-  block-size: 374px;
+  block-size: 383px;
   inline-size: 721px; /* передвигает правую колонку */
-  margin-block-end: 7px;
   position: relative;
-  bottom: 3px;
-  left: 10px;
+  padding-left: 10px;
 }
 
 .content__video-card {
@@ -313,6 +311,7 @@ ol {
   cursor: pointer;
   padding: 6px 12px;
   text-align: center;
+  block-size: 34px;
 }
 
 /* Состояния кнопки */
@@ -335,13 +334,11 @@ ol {
 
 .search-form__submit-button {
   align-self: flex-end;
-  block-size: 34px;
   inline-size: 194px;
   margin-bottom: 10px;
 }
 
 .more-button {
   inline-size: 100%;
-  block-size: 34px;
   margin-top: 30px;
 }
